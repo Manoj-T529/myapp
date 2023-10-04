@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+//import  Select  from 'react-select';
 import './App.css';
+import VegetableSelector from './VegetableSelector';
+import UserLogin from './UserLogin/UserLogin';
+
+
+// const options = [
+//                 { value: "India", label:"Bharat"},
+//                 { value: "Sri Lanka", label:"Lanka"},
+//                 { value: "Bangaladesh", label: "Pulikutty"}
+//                 ];
 
 function App() {
+
+    // const[selectedOptions, setSelectedOptions] = useState([]);
+
+    // const handleChange = (selectedOption) => {
+    //     setSelectedOptions(selectedOption);
+    // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <UserLogin />
+      {/* <VegetableSelector /> */}
+      {/* <Select 
+
+        options={options}
+        value={selectedOptions}
+        onChange={handleChange}
+        isMulti={ true }
+
+      /> */}
     </div>
   );
 }
